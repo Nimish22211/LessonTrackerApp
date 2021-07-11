@@ -51,6 +51,30 @@
     transition:0.5s;
     transform: translateX(-100%);
 }
+.mobileBox{
+    background-color: #fff;
+    text-align: right;
+    padding-top: 50px;
+    padding-right:50px ;
+    display: none;
+}
+.mobile-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:400px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -80px; 
+    /* margin-right: -50px; */
+    text-align: center;
+}
+.mobile-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .menuIcon > #MuiIcon-fontSizeLarge{
     font-size: 3vh;
 }
@@ -143,5 +167,10 @@
     }
     .add-sub{
         margin-top: 10px;
+    }
+}
+@media(max-width:768px){
+    .mobileBox{
+        display: block;
     }
 }
