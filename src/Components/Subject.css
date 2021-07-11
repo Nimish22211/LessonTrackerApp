@@ -1,0 +1,305 @@
+.align-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 75px;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+}
+.align-center > h2{
+    margin-top: 20px;
+}
+.subjects-input{
+    font-size: 30px;
+    padding: 5px;
+    border: none;
+}
+.subjects-flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.subjects-select{
+    margin-left:15px ;
+    font-size: 30px;
+    padding: 5px;
+}
+.subject-container{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    margin:20px;
+}
+
+.total, .class, .home{
+    padding-top: 15px;
+    min-width: 600px;
+    min-height:500px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.total > h3, .class >h3, .home > h3{
+   font-family: 'Baumans',cursive;
+}
+.total, .class{
+    border-right: 2px solid black;
+}
+.class{
+    padding-right: 20px;
+}
+#sub-button{
+    height:45px;
+    font-size: 40px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    background: #466AFF;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+#sub-button:hover{
+    background-color: rgb(0, 0, 255);
+}
+.chapters{
+    /* width:600px; */
+    background-color: white;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    text-align: left; 
+    border:1px solid black;
+    height:auto;
+}
+.chapter-align{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.chapter-delete{
+    cursor: pointer;
+}
+.delAll{
+    padding:10px;
+    font-size: 22px;
+    background: red;
+    outline: none;
+    border: none;
+    border-radius: 999px;
+    color:white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.delAll:hover{
+    background-color: #ce2121;
+
+}
+.chapter-align > #MuiIcon-fontSizeLarge{
+    font-size: 25px;
+}
+.class-record{
+    margin-top: 77px;
+    border:1px solid black
+}
+.record-icons{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width:100px;
+    cursor:pointer;
+}
+.done{
+    background-color:yellowgreen;
+    width:50%
+}
+.clear{
+    background-color: #ff0000;
+    width:50%
+}
+.done > #MuiIcon-fontSizeLarge{
+    font-size: 25px;
+}
+.clear > #MuiIcon-fontSizeLarge{
+    font-size: 25px;
+}
+.done:hover{
+    background-color:   #AED75B;
+}
+.clear:hover{
+    background-color: #ce2121;
+}
+.record-box{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+@media (max-width:1850px){
+    .total, .class, .home{
+        min-width: 550px
+    }
+}
+@media (max-width:1700px){
+    .total, .class, .home{
+        min-width: 450px
+    }
+}
+@media (max-width:1450px){
+    .total, .class, .home{
+        min-width: 400px
+    }
+    .subject-container{
+        font-size: 18px;
+    }
+    .align-center {
+        min-height: 55px;
+    }
+    .align-center > h2 {
+        font-size: 18px;
+    }
+    .align-center > h1 {
+        font-size: 20px;
+    }
+    .subjects-input{
+        font-size: 20px;
+    }
+    #sub-button{
+    height:32px;
+    font-weight: 600;
+    font-size: 20px;
+    }
+    .subjects-select{
+        font-size: 20px;
+    }
+    .delAll{
+        font-size: 14px;
+    }
+    .chapter-align > #MuiIcon-fontSizeLarge{
+        font-size: 18px;
+    }
+    .class-record{
+        margin-top:65px
+    }
+    .record-box {
+        font-size: 19px;
+    }
+    .clear > #MuiIcon-fontSizeLarge, .done > #MuiIcon-fontSizeLarge{
+        font-size: 20px;
+    }
+    .total,.class, .home{
+        display:block;
+    }
+}
+.mobBtn{
+    display: none;
+    text-align: center;
+    margin: 10px;
+    font-size: 10px;
+}
+.mobBtn > button {
+    outline: none;
+    border:none;
+    cursor: pointer;
+    color:white;
+    font-family: Bebas Neue;
+    letter-spacing: 2px;
+}
+.totalBtn{
+    margin-left: 10px;
+    background: #466AFF;
+    padding:5px    
+}
+
+@media (max-width:1100px){
+    .total, .class, .home{
+        min-width: 300px;
+    }
+    .total,.class, .home{
+        display:block;
+    }
+}
+@media (max-width:850px){
+    .total, .class, .home{
+        min-width: 150px;
+    }
+    .subject-container{
+        font-size:12px;
+    }
+    .align-center {
+        min-height: 30px;
+        border-width: 1px;
+    }
+    .align-center > h1 {
+        font-size: 16px;
+    }
+    .align-center > h2 {
+        font-size: 12px;
+    }
+    .subjects-input{
+        font-size: 12px;
+    }
+    #sub-button{
+        height:23px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .subjects-select{
+        font-size: 12px;
+    }
+    .total, .class{
+        border-width: 1px;
+    }
+    .delAll{
+        font-size:8px ;
+        padding:7px;
+    }
+    .chapter-align > #MuiIcon-fontSizeLarge{
+        font-size: 10px;
+    }
+    .class-record{
+        margin-top:52px;
+    }
+    .record-box {
+        font-size: 13px;
+    }
+    .clear > #MuiIcon-fontSizeLarge, .done > #MuiIcon-fontSizeLarge{
+        font-size: 12px;
+    }
+    .clear , .done{
+        width: 30%;
+        margin-right:-40px
+    }
+    .total,.class, .home{
+        display:block;
+    }
+    .total, .class{
+        border-right: 2px solid black;
+    }
+}
+@media(max-width:768px){
+    .mobBtn{
+        display:block;
+    }
+    .total, .class, .home{
+        border: none;
+        padding-top: 0px;
+        width:40%;
+    }
+    
+    .class-right{
+        padding-right: 0px;
+    }
+
+     .class, .home{
+        display:none;
+        border: none;
+    }
+    .subject-container{
+        justify-content: center;
+    }
+}

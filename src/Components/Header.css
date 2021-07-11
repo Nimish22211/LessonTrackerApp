@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.header{
+   position: sticky;
+   top:0;
+   background-color: #fff;
+   width:100%;
+   height:100px;
+   font-family: 'Baumans',cursive;
+   display: flex;
+   align-items: center;
+   box-shadow: 0px 0px 10px black;
+   z-index: 100;
+}
+
+.menuIcon{
+   margin-left:30px;
+   cursor: pointer;
+   z-index: 1;
+   padding:10px;   
+}
+/* #MuiIcon-fontSizeLarge{
+    font-size: 35px;
+} */
+.menuIcon:hover{
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+}
+.header >.title{
+    font-size: 40px;
+    font-weight: 600;
+    width:100%;
+    /* background-color: yellow; */
+    text-align: center;
+    margin-left: -80px;
+    /* cursor: pointer; */
+}
+.header >.title > a{
+    text-decoration: none;
+    color:black
+}
+.side-nav{
+    position: fixed;
+    background-color: #466AFF;
+    height:90vh;
+    overflow-y:auto ;
+    width:300px;
+    border-radius: 40px;
+    padding:10px 20px;
+    border-bottom: 2px solid white;
+    transition:0.5s;
+    transform: translateX(-100%);
+}
+.menuIcon > #MuiIcon-fontSizeLarge{
+    font-size: 3vh;
+}
+.nav-sub > #MuiIcon-fontSizeLarge{
+    font-size: 3vh;
+}
+.add-sub, .nav-sub{
+    margin-top: 25px;
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-sub > a,.nav-sub > a{
+    text-decoration: none;
+    color:white;
+}
+.nav-sub{
+    margin-top: 10px;
+}
+.subjects{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    user-select: none;
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    border-bottom: 1px solid white;
+}
+.subjectsList > li{
+    list-style: none;
+}
+.toggle{
+    /* left:-300px; */
+    transform: translateX(0%);
+    opacity: 1;
+}
+@media (max-width:1450px){
+    .header{
+        height:65px
+    }
+    .header > .title {
+        font-size: 30px;
+    }
+    .MuiIcon-fontSizeLarge{
+        font-size: 25px;
+    }
+    .side-nav{
+        width:200px;
+        border-radius: 30px;
+        padding:7px 10px;
+    }
+    .add-sub, .nav-sub, .subjects{
+        font-size: 30px;
+    }
+}
+@media (max-width:1100px){
+    .header > .title {
+        font-size: 20px;
+    }
+    .side-nav {
+        width:150px;
+        border-radius: 20px;
+        padding:7px 10px;
+    }
+    .add-sub, .nav-sub, .subjects{
+        font-size: 20px;
+    }
+}
+@media(max-width:850px){
+    .header{
+        height:40px;
+    }
+    .header > .title {
+        font-size:15px;
+    }
+    .side-nav {
+        width:100px;
+        border-radius: 15px;
+        padding:0px 5px;
+    }
+    .add-sub, .nav-sub, .subjects{
+        font-size: 13px;
+    }
+    .subjects{
+        padding:5px 0px;
+    }
+    .add-sub{
+        margin-top: 10px;
+    }
+}
