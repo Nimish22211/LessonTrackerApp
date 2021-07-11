@@ -41,7 +41,9 @@ function Header({ navSub, mainInput, Subjects }) {
     useEffect(() => {
         localStorage.setItem('chapters', JSON.stringify(chapters));
     }, [chapters]);
-
+const closeBox = () => {
+        document.getElementsByClassName('mobileBox')[0].style.display = "none";
+    }
     return (
         <div >
             <BrowserRouter>
@@ -67,7 +69,12 @@ function Header({ navSub, mainInput, Subjects }) {
                         </li>)}
                     </div>
                 </div>
-
+<div className="mobileBox">
+                    <CloseIcon fontSize="large" onClick={closeBox} />
+                    <div className="mobile-center">
+                        <div className="mobile-flex"><Rotate90DegreesCcwIcon fontSize="large" />
+                            Please rotate your Phone for better experience</div></div>
+                </div>
                 <Route path="/" exact>
                     <Main inputVal={mainInput} />
                 </Route>
