@@ -7,13 +7,6 @@ import DoneIcon from '@material-ui/icons/Done';
 import CloseIcon from '@material-ui/icons/Close';
 import Home from './Home';
 
-const recordData = () => {
-    let data = localStorage.getItem('records');
-    if (data) {
-        return JSON.parse(localStorage.getItem('records'))
-    }
-}
-
 function Subject({ title, id, subjects, chapters, setChapters }) {
     const [chapInput, setChapInput] = useState('');
     const [subVal, setSubVal] = useState(title);
@@ -50,7 +43,6 @@ function Subject({ title, id, subjects, chapters, setChapters }) {
             })
         })
     }
-    const [record, setRecord] = useState(recordData());
     const onDone = (id) => {
         setChapters([chapters[id].class = "DONE", ...chapters]);
         setChapters(chapters.filter(item => {
@@ -75,9 +67,6 @@ function Subject({ title, id, subjects, chapters, setChapters }) {
             return typeof item !== Object
         }))
     }
-    useEffect(() => {
-        localStorage.setItem('records', JSON.stringify(record))
-    }, [record])
 
 
     const displayClass = () => {
