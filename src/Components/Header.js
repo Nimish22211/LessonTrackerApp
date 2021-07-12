@@ -46,6 +46,12 @@ function Header({ navSub, mainInput, Subjects }) {
 const closeBox = () => {
         document.getElementsByClassName('mobileBox')[0].style.display = "none";
     }
+useEffect(() => {
+        var w = window.outerWidth;
+        if (w <= 768) {
+            document.getElementsByClassName('mobileBox')[0].style.display = "block"
+        }
+    }, [])
     return (
         <div >
             <BrowserRouter>
