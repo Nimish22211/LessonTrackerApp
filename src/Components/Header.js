@@ -5,6 +5,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Main from "./Main";
 import Subject from "./Subject";
 import DeleteIcon from '@material-ui/icons/Delete';
+import Rotate90DegreesCcwIcon from '@material-ui/icons/Rotate90DegreesCcw';
+import CloseIcon from '@material-ui/icons/Close';
 
 const getChapters = () => {
     let chapter = localStorage.getItem('chapters');
