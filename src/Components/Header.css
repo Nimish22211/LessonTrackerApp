@@ -57,6 +57,7 @@
     padding-top: 50px;
     padding-right:50px ;
     display: none;
+   z-index:100;
 }
 .mobile-center{
     display: flex;
