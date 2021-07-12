@@ -75,7 +75,7 @@ const closeBox = () => {
                     <CloseIcon fontSize="large" onClick={closeBox} />
                     <div className="mobile-center">
                         <div className="mobile-flex"><Rotate90DegreesCcwIcon fontSize="large" />
-                            Please rotate your Phone for better experience</div></div>
+                            <div> Please rotate your</div> Phone for better experience</div></div>
                 </div>
                 <Route path="/" exact>
                     <Main inputVal={mainInput} />
