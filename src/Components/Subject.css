@@ -258,14 +258,13 @@
     .delAll{
         font-size:15px ;
         padding:7px;
-        margin-bottom: 12px;
     }
     .chapter-align > #MuiIcon-fontSizeLarge{
         font-size: 13px;
     }
-    .class-record{
+    /*.class-record{
         margin-top:52px;
-    }
+    }*/
     .record-box {
         font-size: 18px;
     }
@@ -295,6 +294,9 @@
         padding-top: 0px;
         width:40%;
     }
+    .class-record{
+        margin-top:74px
+    }
     .total{
         border:none;
         padding-top: 0px;
@@ -310,5 +312,10 @@
     }
     .subject-container{
         justify-content: center;
+    }
+    .delAll{
+        font-size:15px ;
+        padding:7px;
+        margin-bottom: 12px;
     }
 }
