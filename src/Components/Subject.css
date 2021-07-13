@@ -258,6 +258,7 @@
     .delAll{
         font-size:15px ;
         padding:7px;
+        margin-bottom: 12px;
     }
     .chapter-align > #MuiIcon-fontSizeLarge{
         font-size: 13px;
