@@ -66,7 +66,7 @@ useEffect(() => {
                 </div>
 
                 <div id="nav" className="side-nav">
-                    <div className="add-sub">
+                    <div className="add-sub" onClick={sideBar}>
                         <Link to="/">Add A NEW SUBJECT</Link>
                     </div>
                     <div className="subjects" >
