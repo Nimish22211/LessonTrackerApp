@@ -45,6 +45,7 @@ function Header({ navSub, mainInput, Subjects }) {
     }, [chapters]);
 const closeBox = () => {
         document.getElementsByClassName('mobileBox')[0].style.display = "none";
+    document.getElementsByClassName('side-nav')[0].style.zIndex = "0";
     }
 useEffect(() => {
         var w = window.outerWidth;
