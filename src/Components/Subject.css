@@ -212,7 +212,8 @@
 .totalBtn{
     margin-left: 10px;
     background: #466AFF;
-    padding:5px    
+    padding:5px;
+    font-size:20px;
 }
 
 @media (max-width:1100px){
@@ -228,47 +229,47 @@
         min-width: 150px;
     }
     .subject-container{
-        font-size:12px;
+        font-size:15px;
     }
     .align-center {
-        min-height: 30px;
+        min-height: 40px;
         border-width: 1px;
     }
     .align-center > h1 {
-        font-size: 16px;
+        font-size: 20px;
     }
     .align-center > h2 {
-        font-size: 12px;
+        font-size: 15px;
     }
     .subjects-input{
-        font-size: 12px;
+        font-size: 15px;
     }
     #sub-button{
         height:23px;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 15px;
     }
     .subjects-select{
-        font-size: 12px;
+        font-size: 13px;
     }
     .total, .class{
         border-width: 1px;
     }
     .delAll{
-        font-size:8px ;
+        font-size:15px ;
         padding:7px;
     }
     .chapter-align > #MuiIcon-fontSizeLarge{
-        font-size: 10px;
+        font-size: 13px;
     }
     .class-record{
         margin-top:52px;
     }
     .record-box {
-        font-size: 13px;
+        font-size: 18px;
     }
     .clear > #MuiIcon-fontSizeLarge, .done > #MuiIcon-fontSizeLarge{
-        font-size: 12px;
+        font-size: 15px;
     }
     .clear , .done{
         width: 30%;
@@ -279,6 +280,9 @@
     }
     .total, .class{
         border-right: 2px solid black;
+    }
+    .chapters{
+        font-size: 18px;
     }
 }
 @media(max-width:768px){
