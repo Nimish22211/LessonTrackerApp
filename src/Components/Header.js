@@ -72,7 +72,7 @@ useEffect(() => {
                         SUBJECTS
                     </div>
                     <div class="subjectsList">
-                        {navSub.map((subject, index) => <li className="nav-sub " id={index}><Link to={`/${subject}`}>{subject}</Link>
+                        {navSub.map((subject, index) => <li className="nav-sub" onClick={sideBar} id={index}><Link to={`/${subject}`}>{subject}</Link>
                             <DeleteIcon id="MuiIcon-fontSizeLarge" onClick={() => onDelete(index)} />
                         </li>)}
                     </div>
