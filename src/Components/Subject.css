@@ -289,12 +289,16 @@
     .mobBtn{
         display:block;
     }
-    .total, .class, .home{
+     .class, .home{
         border: none;
         padding-top: 0px;
         width:40%;
     }
-    
+    .total{
+        border:none;
+        padding-top: 0px;
+        /* width:40% */
+    }
     .class-right{
         padding-right: 0px;
     }
